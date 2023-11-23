@@ -1,12 +1,11 @@
 import { controleEditora } from "@/classes/controle/ControleEditora";
-import { Livro } from "@/classes/modelo/Livro";
+import { ControleLivros } from "@/classes/controle/ControleLivros";
+import { Menu } from "@/components/Menu";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from '../styles/Home.module.css'
-import { Menu } from "@/components/Menu";
-import { ControleLivros } from "@/classes/controle/ControleLivros";
+import styles from '../styles/Home.module.css';
 
 const LivroDados: NextPage = () => { 
   const router = useRouter();

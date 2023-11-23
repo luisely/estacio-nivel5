@@ -1,11 +1,11 @@
-import { ControleLivros, LivroMongo } from "@/classes/controle/ControleLivros";
+import { ControleLivros } from "@/classes/controle/ControleLivros";
+import { Livro } from "@/classes/modelo/Livro";
 import { LinhaLivro } from "@/components/LinhaLivro";
 import { Menu } from "@/components/Menu";
 import type { NextPage } from "next";
 import Head from 'next/head';
 import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css';
-import { Livro } from "@/classes/modelo/Livro";
 
 const LivroLista: NextPage = () => {
   const [livros, setLivros] = useState<Livro[]>([])
